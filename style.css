@@ -1,5 +1,5 @@
 body {
-    background-image: url("https://media.istockphoto.com/vectors/abstract-dandelions-dandelion-with-flying-seeds-vector-vector-id947112368?k=6&m=947112368&s=612x612&w=0&h=D275ZAAOBPzcaBQRT7Uf16GKTkoeRACVtZxlSSkmLUQ=");
+    /* background-image: url("https://media.istockphoto.com/vectors/abstract-dandelions-dandelion-with-flying-seeds-vector-vector-id947112368?k=6&m=947112368&s=612x612&w=0&h=D275ZAAOBPzcaBQRT7Uf16GKTkoeRACVtZxlSSkmLUQ="); */
 }
 
 header {
@@ -10,10 +10,17 @@ header {
     grid-area: header;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    /* background-image: url("https://d1dph1psyatsfa.cloudfront.net/bethesdamagazi/wp-content/uploads/2019/06/GettyImages-910456158_slide.jpg"); */
+    background-image: url("https://media.istockphoto.com/vectors/dandelion-silhouette-vector-id1160941010?k=6&m=1160941010&s=612x612&w=0&h=4W6njWcNoqPDXC_m0PkuMm6uw6mPzMkMDTsXLkDjXDg=");
+    /* opacity: 0.5; */
+}
+
+#sm-icon-container {
+    /* border: solid black 1px; */
 }
 
 .fa {
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .fa:hover {
@@ -22,6 +29,7 @@ header {
 
 nav {
     border: solid black 1px;
+    background-color: rgb(179, 221, 179);
     font-size: xx-large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-area: nav;
@@ -29,22 +37,13 @@ nav {
     padding-top: var(--main-padding);
 }
 
-/* nav {
-    padding-left: 4rem;
-    padding-right: 2rem;
-    background-color: ivory;
-    grid-area: nav;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    text-align: left;
-} */
-
 ul {
    list-style-type: none;
+   text-align: left;
 }
 
 main {
-    background-image: url(https://i.pinimg.com/originals/6d/fd/7c/6dfd7c8fa5ba6c2becb7cfa7b28171f4.jpg);
+    /* background-image: url(https://i.pinimg.com/originals/6d/fd/7c/6dfd7c8fa5ba6c2becb7cfa7b28171f4.jpg); */
     border: solid pink 1px;
     grid-area: main;
     border-radius: var(--main-radius);
@@ -69,7 +68,7 @@ main {
     grid-gap: .2rem;
     font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
     font-weight: 400;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 16px;
     text-align: center;
 }
