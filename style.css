@@ -15,6 +15,13 @@ header {
     background-image: url("https://images.unsplash.com/photo-1513112300738-bbb13af7028e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
 }
 
+header h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 #sm-icon-container {
     float: right;
 }
@@ -28,9 +35,8 @@ header {
 }
 
 nav {
-    border: solid orange 1px;
-    background-color: rgb(49, 49, 79);
-    font-size: xx-large;
+    /* border: solid orange 1px;
+    background-color: rgb(49, 49, 79); */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-area: nav;
     border-radius: var(--main-radius);
@@ -44,16 +50,63 @@ nav h2 {
 
 ul {
    list-style-type: none;
-   /* text-align: left; */
+   margin-left: 0;
+   padding-left: 0;
 }
 
 li {
-    padding: 1rem;
-    /* text-align: left; */
+    border-bottom: 2px solid #fff;
+    /* font-size: 1.75rem; */
+    color: #010100;
+    font-weight: 400;
+    display: block;
+    padding: 1.6rem;
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
 }
 
 li:hover {
-    color: orange;
+    /* background-color: orange; */
+    color: #fff;
+    background-color: #17629e;
+    text-decoration: none
+}
+
+nav ul li a {
+    color: #010100;
+    font-weight: 400;
+    display: block;
+    padding: 1.6rem;
+    padding-left: 1.5rem;
+    font-size: 1.25rem;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #17629e;
+    text-decoration: none
+}
+
+nav ul li ul {
+    display: none;
+    background-color: #d7d7d7
+}
+
+nav ul li ul li a {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-left: 2.5rem
+}
+
+nav ul li ul li a.active {
+    background-color: initial;
+    color: #17629e;
+    padding-bottom: initial
+}
+
+nav ul li ul li a:hover {
+    color: #fff;
+    background-color: #17629e
 }
 
 a {
