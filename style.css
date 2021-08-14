@@ -16,7 +16,7 @@ header {
 }
 
 #sm-icon-container {
-    /* border: solid black 1px; */
+    float: right;
 }
 
 .fa {
@@ -44,15 +44,21 @@ nav h2 {
 
 ul {
    list-style-type: none;
-   text-align: auto;
+   /* text-align: left; */
 }
 
 li {
     padding: 1rem;
+    /* text-align: left; */
 }
 
 li:hover {
     color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 
 main {
@@ -70,6 +76,10 @@ main h3 {
     font-size: x-large;
     border-bottom: solid orange 2px;
     padding-bottom: 1rem;
+}
+
+main h4 {
+    color: orange;
 }
 
 main p {
