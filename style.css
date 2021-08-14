@@ -1,6 +1,6 @@
 body {
-    background-image: url("https://img.freepik.com/free-vector/space-with-stars-universe-space-infinity-background_78474-99.jpg?size=626&ext=jpg");
-    /* background-image: url("https://media.istockphoto.com/vectors/abstract-dandelions-dandelion-with-flying-seeds-vector-vector-id947112368?k=6&m=947112368&s=612x612&w=0&h=D275ZAAOBPzcaBQRT7Uf16GKTkoeRACVtZxlSSkmLUQ="); */
+    background-color: powderblue;
+    /* background-image: url("https://img.freepik.com/free-vector/space-with-stars-universe-space-infinity-background_78474-99.jpg?size=626&ext=jpg"); */
 }
 
 header {
@@ -11,10 +11,8 @@ header {
     grid-area: header;
     border-radius: var(--main-radius);
     padding-top: var(--main-padding);
+    margin-right: 10px;
     background-image: url("https://images.unsplash.com/photo-1513112300738-bbb13af7028e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
-    /* background-image: url("https://d1dph1psyatsfa.cloudfront.net/bethesdamagazi/wp-content/uploads/2019/06/GettyImages-910456158_slide.jpg"); */
-    /* background-image: url("https://media.istockphoto.com/vectors/dandelion-silhouette-vector-id1160941010?k=6&m=1160941010&s=612x612&w=0&h=4W6njWcNoqPDXC_m0PkuMm6uw6mPzMkMDTsXLkDjXDg="); */
-    /* opacity: 0.5; */
 }
 
 #sm-icon-container {
@@ -26,7 +24,6 @@ header {
 }
 
 .fa:hover {
-    /* opacity: 0.7; */
     color: orange;
 }
 
@@ -37,7 +34,8 @@ nav {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-area: nav;
     border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
+    padding-right: var(--main-padding);
+    margin-right: 10px;
 }
 
 nav h2 {
@@ -46,7 +44,7 @@ nav h2 {
 
 ul {
    list-style-type: none;
-   text-align: left;
+   text-align: auto;
 }
 
 li {
@@ -58,10 +56,29 @@ li:hover {
 }
 
 main {
-    /* background-image: url(https://i.pinimg.com/originals/6d/fd/7c/6dfd7c8fa5ba6c2becb7cfa7b28171f4.jpg); */
     grid-area: main;
     border-radius: var(--main-radius);
     padding: var(--main-padding);
+}
+
+main h2 {
+    font-size: xx-large;
+    color: orange;
+}
+
+main h3 {
+    font-size: x-large;
+    border-bottom: solid orange 2px;
+    padding-bottom: 1rem;
+}
+
+main p {
+    padding-top: 1rem;
+    padding-bottom: .75rem;
+}
+
+.main-content {
+    margin-bottom: 7rem;
 }
 
 :root {
@@ -88,20 +105,14 @@ main {
     color: white;
 }
 
-/* mobile breakpoint is currently 550px but you can change that for stretch */
 @media only screen and (max-width: 550px) {
     .container {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr, 1fr, 5fr, 1fr;
-      /* grid-template-rows: .5fr .5fr 2.2fr 1.3fr 1.3fr 1.3fr .5fr; */
       grid-template-areas: 
         "header"
         "nav"
         "main";
-        /* "content1"
-        "content2"
-        "content3"
-        "footer"; */
       margin: .25rem;
     }
 }
