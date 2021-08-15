@@ -14,8 +14,8 @@
     - [X] social links
     - [X] main encyclopedia content (text with multiple heading and paragraph elements, and images)
 - [X] Include images within the body text with appropriate, reusable classes to wrap text around them.
-- [ ] The sidebar navigation must feature expandable categories.  The categories must also be able to be linked (note that you're only tasked with building a single page, but the functionality of a linked expander must be present).
-- [ ] Interactive elements must include hover states and CSS transitions.
+- [X] The sidebar navigation must feature expandable categories.  The categories must also be able to be linked (note that you're only tasked with building a single page, but the functionality of a linked expander must be present).
+- [X] Interactive elements must include hover states and CSS transitions.
 - [ ] Sidebar items must feature an active class to indicate the current page.
 - [ ] On mobile, the sidebar turns into an expandable menu accessed via a header, with its expandable categories remaining intact within.  This may be done as a separate element that is only visible on mobile, but is also possible to have the sidebar change to the header.  How to do it is up to you.
 

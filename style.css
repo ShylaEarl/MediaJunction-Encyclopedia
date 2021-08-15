@@ -35,8 +35,6 @@ header h1 {
 }
 
 nav {
-    /* border: solid orange 1px;
-    background-color: rgb(49, 49, 79); */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     grid-area: nav;
     border-radius: var(--main-radius);
@@ -46,6 +44,9 @@ nav {
 
 nav h2 {
     text-align: center;
+    color: black;
+    text-shadow: 1px 1px papayawhip;
+    font-size: 35px;
 }
 
 ul {
@@ -56,17 +57,15 @@ ul {
 
 li {
     border-bottom: 2px solid #fff;
-    /* font-size: 1.75rem; */
-    color: #010100;
+    /* color: #010100;
     font-weight: 400;
     display: block;
-    padding: 1.6rem;
-    padding-left: 1.5rem;
-    font-size: 1.25rem;
+    padding: .5rem;
+    padding-left: .5rem;
+    font-size: 1.25rem; */
 }
 
 li:hover {
-    /* background-color: orange; */
     color: #fff;
     background-color: #17629e;
     text-decoration: none
@@ -76,8 +75,8 @@ nav ul li a {
     color: #010100;
     font-weight: 400;
     display: block;
-    padding: 1.6rem;
-    padding-left: 1.5rem;
+    padding: .5rem;
+    padding-left: .5rem;
     font-size: 1.25rem;
 }
 
@@ -99,19 +98,23 @@ nav ul li ul li a {
 }
 
 nav ul li ul li a.active {
-    background-color: initial;
+    background-color: #17629e;
     color: #17629e;
     padding-bottom: initial
 }
 
 nav ul li ul li a:hover {
     color: #fff;
-    background-color: #17629e
+    background-color: orange;
 }
 
 a {
     text-decoration: none;
     color: white;
+}
+
+.triangle-symbol {
+    float: right;
 }
 
 main {
@@ -121,8 +124,9 @@ main {
 }
 
 main h2 {
-    font-size: xx-large;
-    color: orange;
+    color: #17629e;
+    text-shadow: 1px 1px papayawhip;
+    font-size: 45px;
 }
 
 main h3 {
