@@ -12,10 +12,10 @@ function onReady(){
     function toggleMenu() {
         if (menu.classList.contains("active")) {
             menu.classList.remove("active");
-            toggle.querySelector("a").innerHTML = "<i class='fa fa-bars'></i>";
+            toggle.querySelector("a").innerHTML = "<i class='mobile fa fa-bars'></i>";
         } else {
             menu.classList.add("active");
-            toggle.querySelector("a").innerHTML = "<i class='fa fa-times'></i>";
+            toggle.querySelector("a").innerHTML = "<i class='mobile fa fa-times'></i>";
         }
     }
 

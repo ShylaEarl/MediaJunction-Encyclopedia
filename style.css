@@ -23,17 +23,15 @@ header h1 {
     -webkit-text-fill-color: transparent;
   }
 
-#sm-icon-container {
-    float: right;
-}
-
 .fa {
     padding: 1rem;
+    
 }
 
 .fa:hover {
     color: orange;
 }
+
 
 /* Nav 2.0 with reflexive mobile drop down */
 nav {
@@ -65,7 +63,10 @@ a {
     display: grid;
     flex-wrap: wrap;
     justify-content: space-between;
+    top: 0;
+    right: 0;
 }
+
 .menu li a {
     display: block;
     padding: 15px 5px;
@@ -110,7 +111,7 @@ a {
 }
 
 /* Desktop menu */
-@media all and (min-width: 960px) {
+@media all and (min-width: 400px) {
     .menu {
       align-items: flex-start;
       flex-wrap: nowrap;
@@ -137,6 +138,10 @@ a {
 
     .submenu-active {
       border-radius: 0;
+    }
+
+    #sm-icon-container {
+        float: right;
     }
 }
 
@@ -264,9 +269,10 @@ main p {
     display: grid;
     height: 100vh;
     grid-template-columns: .65fr 1.1166fr 1.1166fr 1.1166fr;
-    grid-template-rows: .75fr 1.083fr 1.083fr 1.083fr;
+    grid-template-rows: .75fr .25fr 1fr 1fr 1fr;
     grid-template-areas: 
       "header header header header"
+      "nav social social social"
       "nav main main main"
       "nav main main main"
       "nav main main main";
@@ -279,15 +285,36 @@ main p {
     color: white;
 }
 
-@media only screen and (max-width: 550px) {
+/* @media only screen and (max-width: 550px)  */
+@media all and (max-width: 400px) {
     .container {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr, 1fr, 5fr, 1fr;
+      grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
       grid-template-areas: 
         "header"
         "nav"
+        "social"
         "main";
       margin: .25rem;
+    }
+
+    .mobile.fa.fa-bars, 
+    .mobile.fa.fa-times {
+        top: 0;
+        right: 0;
+        position: fixed;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: grid;
+    }
+
+    #sm-icon-container {
+        text-align: center;
     }
 }
 
