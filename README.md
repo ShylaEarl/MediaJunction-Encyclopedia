@@ -11,7 +11,7 @@ _Duration: 5 Days_
 ## Functional requirements:
 - [X] Must be responsive and function on desktop, mobile, and any resolution in-between.
 - [X] The main page container must be centered 
-    - [X] and not exceed a max-width of 1240px.
+    - [] and not exceed a max-width of 1240px.
 - [X] The page must prominently feature a 
     - [X] logo at the top (can be text styled with CSS)
     - [X] sidebar navigation
@@ -30,9 +30,7 @@ _Duration: 5 Days_
 
 ## Deliverables:
 - [X] Link to GitHub repository.
-- [ ] Link to project hosted on GitHub pages (https://pages.github.com/) or other hosting service.
-
-To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
+- [X] Link to project hosted on GitHub pages (https://pages.github.com/) or other hosting service.
 
 ## Built With
 
@@ -47,4 +45,6 @@ If you have suggestions or issues, please email me at [shyla.earl@gmail.com]
 
 ## Screen Shots
 
-
+(screen-shots/MediaJunctionDesktop.png)
+(screen-shots/MediaJunctionMobile1.png)
+(screen-shots/MediaJunctionMobile2.png)
