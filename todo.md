@@ -19,8 +19,8 @@
 - [X] Interactive elements must include hover states and CSS transitions.
 - [ ] Sidebar items must feature an active class to indicate the current page.
 - [X] On mobile, the sidebar turns into an expandable menu 
-    - [ ] accessed via a header
-    - [X] its expandable categories remain intact within  
+    - [X] accessed via a header
+    - [] its expandable categories remain intact within  
     This may be done as a separate element that is only visible on mobile, but is also possible to have the sidebar change to the header.  
 
 ## Deliverables:

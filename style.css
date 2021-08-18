@@ -3,7 +3,6 @@ body {
     /* background-image: url("https://img.freepik.com/free-vector/space-with-stars-universe-space-infinity-background_78474-99.jpg?size=626&ext=jpg"); */
 }
 
-/* Header and Social Media Links */
 header {
     border: solid black 1px;
     text-align: center;
@@ -25,17 +24,19 @@ header h1 {
 
 .fa {
     padding: 1rem;
-    
 }
 
 .fa:hover {
     color: orange;
 }
 
+.social {
+    grid-area: social;
+}
 
 /* Nav 2.0 with reflexive mobile drop down */
 nav {
-    background: #222;
+    background: rgb(54, 54, 82);
     margin: .25rem .25rem;
     border-radius: 5px;
 }
@@ -105,7 +106,10 @@ a {
 }
 
 /* click on sign/planet/house web menu OR whole drop down on mob men */
-.submenu-active {
+.submenu-active, 
+.subitem-active,
+.item-active,
+.active-highlight {
     background-color: papayawhip;
     border-radius: 3px;
 }
@@ -117,11 +121,8 @@ a {
       flex-wrap: nowrap;
       background: none;
     }
-    /* .logo {
-      order: 0;
-    } */
+    
     .item {
-      /* order: 1; */
       position: relative;
       display: block;
       width: auto;
@@ -140,88 +141,11 @@ a {
       border-radius: 0;
     }
 
-    #sm-icon-container {
-        float: right;
+    .sm-icon-container {
+        /* float: right; */
+        text-align: right;
     }
 }
-
-/* Side Nav Menu */
-/* nav {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    grid-area: nav;
-    border-radius: var(--main-radius);
-    padding-right: var(--main-padding);
-    margin-right: 10px;
-}
-
-nav h2 {
-    text-align: center;
-    color: black;
-    text-shadow: 1px 1px papayawhip;
-    font-size: 35px;
-}
-
-ul {
-   list-style-type: none;
-   margin-left: 0;
-   padding-left: 0;
-}
-
-li {
-    border-bottom: 2px solid #fff;
-}
-
-li:hover {
-    color: #fff;
-    background-color: #17629e;
-    text-decoration: none
-}
-
-nav ul li a {
-    color: #010100;
-    font-weight: 400;
-    display: block;
-    padding: .5rem;
-    padding-left: .5rem;
-    font-size: 1.25rem;
-}
-
-nav ul li a:hover {
-    color: #fff;
-    background-color: #17629e;
-    text-decoration: none
-}
-
-nav ul li ul {
-    display: none;
-    background-color: #d7d7d7
-}
-
-nav ul li ul li a {
-    font-size: 1.25rem;
-    font-weight: 300;
-    padding-left: 2.5rem
-}
-
-nav ul li ul li a.active {
-    background-color: #17629e;
-    color: #17629e;
-    padding-bottom: initial
-}
-
-nav ul li ul li a:hover {
-    color: #fff;
-    background-color: orange;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-}
-
-.triangle-symbol {
-    float: right;
-} */
 
 .triangle-symbol {
     float: right;
@@ -231,13 +155,14 @@ a {
 main {
     grid-area: main;
     border-radius: var(--main-radius);
-    padding: var(--main-padding);
+    /* padding: var(--main-padding); */
 }
 
 main h2 {
-    color: #17629e;
-    text-shadow: 1px 1px papayawhip;
+    text-shadow: 1px 1px orange;
     font-size: 45px;
+    margin-top: 0;
+    padding-top: 0;
 }
 
 main h3 {
@@ -259,11 +184,22 @@ main p {
     margin-bottom: 7rem;
 }
 
+.text-wrap-rt {
+    clear:left;
+    float: right;
+    margin: 1rem;
+}
+.text-wrap-lt {
+    clear: right;
+    float: left;
+    margin: 1rem;
+}
+
 /* Root and Container */
-:root {
+/* :root {
     --main-radius: 5px;
     --main-padding: 15px;
-}
+} */
 
 .container {
     display: grid;
@@ -272,7 +208,7 @@ main p {
     grid-template-rows: .75fr .25fr 1fr 1fr 1fr;
     grid-template-areas: 
       "header header header header"
-      "nav social social social"
+      "social social social social"
       "nav main main main"
       "nav main main main"
       "nav main main main";
@@ -285,7 +221,6 @@ main p {
     color: white;
 }
 
-/* @media only screen and (max-width: 550px)  */
 @media all and (max-width: 400px) {
     .container {
       grid-template-columns: 1fr;
@@ -313,7 +248,7 @@ main p {
         display: grid;
     }
 
-    #sm-icon-container {
+    .sm-icon-container {
         text-align: center;
     }
 }
