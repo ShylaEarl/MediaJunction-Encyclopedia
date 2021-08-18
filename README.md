@@ -1,63 +1,48 @@
 # MediaJunction-Encyclopedia
 
-## Description
+_Duration: 5 Days_
 
-_Duration: Weekend Challenge_
+## Language requirements:
+- [X] HTML.  Take advantage of semantic elements offered in HTML5 where applicable.
+- [X] CSS or SCSS.  Styling must be done from scratch.  No external CSS libraries such as Bootstrap, Tailwind, etc. are allowed, with the exception of normalize.css or a comparable CSS reset.  Font Awesome or similar is also allowed for icons.
+- [ ] Try to use BEM for naming classes (http://getbem.com/naming/).
+- [X] Use vanilla JavaScript or jQuery.
 
-Directly above this is how long it took you to develop the project. Your project description goes here. What problem did you solve? How did you solve it? 
+## Functional requirements:
+- [X] Must be responsive and function on desktop, mobile, and any resolution in-between.
+- [X] The main page container must be centered 
+    - [] and not exceed a max-width of 1240px.
+- [X] The page must prominently feature a 
+    - [X] logo at the top (can be text styled with CSS)
+    - [X] sidebar navigation
+    - [X] a banner image
+    - [X] social links
+    - [X] main encyclopedia content (text with multiple heading and paragraph elements, and images)
+- [X] Include images within the body text with appropriate, reusable classes to wrap text around them.
+- [X] The sidebar navigation must feature expandable categories.  
+    - [ ] The categories must also be able to be linked (note that you're only tasked with building a single page, but the functionality of a linked expander must be present).
+- [X] Interactive elements must include hover states and CSS transitions.
+- [ ] Sidebar items must feature an active class to indicate the current page.
+- [X] On mobile, the sidebar turns into an expandable menu 
+    - [X] accessed via a header
+    - [] its expandable categories remain intact within.  
+    This may be done as a separate element that is only visible on mobile, but is also possible to have the sidebar change to the header.  
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquam at massa in faucibus. Etiam volutpat, risus non mollis convallis, velit nisi pulvinar mi, eu faucibus orci nisi eget nibh. Integer a velit pretium, volutpat arcu eleifend, fringilla elit. Cras erat sapien, convallis venenatis tellus vitae, feugiat dictum felis.
-
-Suspendisse euismod volutpat aliquet. Maecenas vulputate mauris in pellentesque facilisis. Phasellus varius malesuada semper. Cras sollicitudin diam mollis maximus aliquam.
+## Deliverables:
+- [X] Link to GitHub repository.
+- [ ] Link to project hosted on GitHub pages (https://pages.github.com/) or other hosting service.
 
 To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.heroku.com)
 
-## Screen Shot
-
-Include one or two screen shots of your project here (optional). Remove if unused.
-
-### Prerequisites
-
-Link to software that is required to install the app (e.g. node).
-
-- [Node.js](https://nodejs.org/en/)
-- List other prerequisites here
-
-## Installation
-
-How do you get your application up and running? This is a step by step list for how another developer could get this project up and running. The good target audience in terms of knowledge, would be a fellow Primer from another cohort being able to spin up this project. Note that you do not need a paragraph here to intro Installation. It should be step-by-step.
-
-If your application has secret keys (for example --  Twilio), make sure you tell them how to set that up, both in getting the key and then what to call it in the `.env` file.
-
-1. Create a database named `your database name`,
-2. The queries in the `tables.sql` file are set up to create all the necessary tables and populate the needed data to allow the application to run correctly. The project is built on [Postgres](https://www.postgresql.org/download/), so you will need to make sure to have that installed. We recommend using Postico to run those queries as that was used to create the queries, 
-3. Open up your editor of choice and run an `npm install`
-4. Run `npm run server` in your terminal
-5. Run `npm run client` in your terminal
-6. The `npm run client` command will open up a new browser tab for you!
-
-## Usage
-How does someone use this application? Tell a user story here.
-
-1. xxx
-2. xxx
-3. xxx
-4. xxx
-5. xxx
-6. xxx
-
-
 ## Built With
 
-List technologies and frameworks here
+HTML5
+CSS3
+CSS Grid
+Javascript
+jQuery
 
-## License
-[MIT](https://choosealicense.com/licenses/mit/)
-
-_Note, include this only if you have a license file. GitHub will generate one for you if you want!_
-
-## Acknowledgement
-Thanks to [Prime Digital Academy](www.primeacademy.io) who equipped and helped me to make this application a reality. (Thank your people)
+## Screen Shot
 
 ## Support
-If you have suggestions or issues, please email me at [youremail@whatever.com](www.google.com)
+If you have suggestions or issues, please email me at [shyla.earl@gmail.com]
