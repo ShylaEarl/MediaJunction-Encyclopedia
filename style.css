@@ -4,6 +4,7 @@ body {
     /* background-image: url("https://img.freepik.com/free-vector/space-with-stars-universe-space-infinity-background_78474-99.jpg?size=626&ext=jpg"); */
 }
 
+/* Grid */
 .container {
     display: grid;
     height: 100vh;
@@ -20,6 +21,7 @@ body {
     color: white;
 }
 
+/* Header Grid Area */
 header {
     grid-area: header;
     background-image: url("https://images.unsplash.com/photo-1513112300738-bbb13af7028e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
@@ -33,6 +35,7 @@ header h1 {
     -webkit-text-fill-color: transparent;
 }
 
+/* Social Grid Area */
 .social {
     grid-area: social;
 }
@@ -44,6 +47,7 @@ header h1 {
     opacity: 0.7;
 }
 
+/* Nav Grid Area */
 nav {
     background: rgb(28, 28, 68);
     border-radius: 3px;
@@ -60,15 +64,13 @@ nav {
 }
 a {
     color: white;
-    /* text-decoration: none; */
+    text-decoration: none;
 }
 .triangle-symbol {
     float: right;
 }
-
-/* .item a:hover::after, */
 .item a:hover {
-    color: pink;
+    color: orange;
 }
 
 /* Mobile menu */
@@ -84,7 +86,7 @@ a {
 .submenu {
     display: none;
 }
-.submenu-active .submenu {
+.submenu.submenu-active {
     display: block;
     background-color: papayawhip;
     border-radius: 3px;
@@ -97,10 +99,7 @@ a {
     border-radius: 3px;
 }
 
-/* .submenu-active, 
-.subitem-active, */
-.item-active,
-.active-highlight {
+.highlight-active {
     background-color: powderblue;
     border-radius: 3px;
 }
@@ -149,7 +148,7 @@ a {
     }
 }
 
-/* Main Content */
+/* Main Grid Area */
 main {
     grid-area: main;
     padding-left: 5px;

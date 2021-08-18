@@ -11,7 +11,7 @@ _Duration: 5 Days_
 ## Functional requirements:
 - [X] Must be responsive and function on desktop, mobile, and any resolution in-between.
 - [X] The main page container must be centered 
-    - [] and not exceed a max-width of 1240px.
+    - [X] and not exceed a max-width of 1240px.
 - [X] The page must prominently feature a 
     - [X] logo at the top (can be text styled with CSS)
     - [X] sidebar navigation
@@ -22,7 +22,7 @@ _Duration: 5 Days_
 - [X] The sidebar navigation must feature expandable categories.  
     - [X] The categories must also be able to be linked (note that you're only tasked with building a single page, but the functionality of a linked expander must be present).
 - [X] Interactive elements must include hover states and CSS transitions.
-- [ ] Sidebar items must feature an active class to indicate the current page.
+- [X] Sidebar items must feature an active class to indicate the current page.
 - [X] On mobile, the sidebar turns into an expandable menu 
     - [X] accessed via a header
     - [X] its expandable categories remain intact within.  
@@ -36,13 +36,15 @@ To see the fully functional site, please visit: [DEPLOYED VERSION OF APP](www.he
 
 ## Built With
 
-HTML5
-CSS3
-CSS Grid
-Javascript
-jQuery
-
-## Screen Shot
+- HTML5
+- CSS3
+- CSS Grid
+- Javascript
+- jQuery
 
 ## Support
 If you have suggestions or issues, please email me at [shyla.earl@gmail.com]
+
+## Screen Shots
+
+
