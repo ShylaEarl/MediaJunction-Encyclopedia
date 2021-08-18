@@ -1,205 +1,8 @@
 body {
     background-color: powderblue;
+    margin: 0;
     /* background-image: url("https://img.freepik.com/free-vector/space-with-stars-universe-space-infinity-background_78474-99.jpg?size=626&ext=jpg"); */
 }
-
-header {
-    border: solid black 1px;
-    text-align: center;
-    font-size: xx-large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    grid-area: header;
-    border-radius: var(--main-radius);
-    padding-top: var(--main-padding);
-    margin-right: 10px;
-    background-image: url("https://images.unsplash.com/photo-1513112300738-bbb13af7028e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
-}
-
-header h1 {
-    font-size: 72px;
-    background: -webkit-linear-gradient(#eee, orange);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-.fa {
-    padding: 1rem;
-}
-
-.fa:hover {
-    color: orange;
-}
-
-.social {
-    grid-area: social;
-}
-
-/* Nav 2.0 with reflexive mobile drop down */
-nav {
-    background: rgb(54, 54, 82);
-    margin: .25rem .25rem;
-    border-radius: 5px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-.menu,
-.submenu {
-    list-style-type: none;
-}
-
-.logo {
-    font-size: 20px;
-}
-
-.item:not(.button) a:hover,
-.item a:hover::after {
-    color: orange;
-}
-/* Mobile menu */
-.menu {
-    display: grid;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    top: 0;
-    right: 0;
-}
-
-.menu li a {
-    display: block;
-    padding: 15px 5px;
-}
-.menu li.subitem a {
-    padding: 15px;
-}
-.toggle {
-    order: 1;
-    font-size: 20px;
-}
-
-.item {
-    order: 3;
-    width: 100%;
-    display: none;
-}
-.active .item {
-    display: block;
-}
-
-/* Submenu up from mobile screens */
-.submenu {
-    display: none;
-}
-.submenu-active .submenu {
-    display: block;
-}
-.has-submenu i {
-    font-size: 12px;
-}
-
-.subitem a {
-    padding: .5rem;
-    color: black;
-}
-
-/* click on sign/planet/house web menu OR whole drop down on mob men */
-.submenu-active, 
-.subitem-active,
-.item-active,
-.active-highlight {
-    background-color: papayawhip;
-    border-radius: 3px;
-}
-
-/* Desktop menu */
-@media all and (min-width: 400px) {
-    .menu {
-      align-items: flex-start;
-      flex-wrap: nowrap;
-      background: none;
-    }
-    
-    .item {
-      position: relative;
-      display: block;
-      width: auto;
-    }
-    
-    .submenu-active .submenu {
-      display: block;
-      background: lightgreen;
-    }
-
-    .toggle {
-      display: none;
-    }
-
-    .submenu-active {
-      border-radius: 0;
-    }
-
-    .sm-icon-container {
-        /* float: right; */
-        text-align: right;
-    }
-}
-
-.triangle-symbol {
-    float: right;
-}
-
-/* Main Content */
-main {
-    grid-area: main;
-    border-radius: var(--main-radius);
-    /* padding: var(--main-padding); */
-}
-
-main h2 {
-    text-shadow: 1px 1px orange;
-    font-size: 45px;
-    margin-top: 0;
-    padding-top: 0;
-}
-
-main h3 {
-    font-size: x-large;
-    border-bottom: solid orange 2px;
-    padding-bottom: 1rem;
-}
-
-main h4 {
-    color: orange;
-}
-
-main p {
-    padding-top: 1rem;
-    padding-bottom: .75rem;
-}
-
-.main-content {
-    margin-bottom: 7rem;
-}
-
-.text-wrap-rt {
-    clear:left;
-    float: right;
-    margin: 1rem;
-}
-.text-wrap-lt {
-    clear: right;
-    float: left;
-    margin: 1rem;
-}
-
-/* Root and Container */
-/* :root {
-    --main-radius: 5px;
-    --main-padding: 15px;
-} */
 
 .container {
     display: grid;
@@ -214,14 +17,106 @@ main p {
       "nav main main main";
     grid-gap: .2rem;
     font-family: 'Helvetica', 'Franklin Gothic Medium', 'Arial Narrow', 'Arial', 'sans-serif';
-    font-weight: 400;
-    /* text-transform: uppercase; */
-    font-size: 16px;
-    /* text-align: center; */
     color: white;
 }
 
-@media all and (max-width: 400px) {
+header {
+    grid-area: header;
+    background-image: url("https://images.unsplash.com/photo-1513112300738-bbb13af7028e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8c3RhciUyMGJhY2tncm91bmR8ZW58MHx8MHx8&ixlib=rb-1.2.1&w=1000&q=80");
+    border: solid 1px black;
+    text-align: center;
+}
+header h1 {
+    font-size: 72px;
+    background: -webkit-linear-gradient(#eee, orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.social {
+    grid-area: social;
+}
+.fa {
+    padding: 1rem;
+}
+.fa:hover {
+    color: orange;
+    opacity: 0.7;
+}
+
+nav {
+    background: rgb(28, 28, 68);
+    border-radius: 3px;
+}
+.menu,
+.submenu {
+    list-style-type: none;
+    padding: 1rem;
+}
+.logo {
+    font-size: 25px;
+    padding-bottom: 10px;
+    color: orange;
+}
+a {
+    color: white;
+    /* text-decoration: none; */
+}
+.triangle-symbol {
+    float: right;
+}
+
+/* .item a:hover::after, */
+.item a:hover {
+    color: pink;
+}
+
+/* Mobile menu */
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+.menu li.subitem a {
+    padding: 15px;
+}
+
+/* Submenu up for mobile screens */
+.submenu {
+    display: none;
+}
+.submenu-active .submenu {
+    display: block;
+    background-color: papayawhip;
+    border-radius: 3px;
+}
+.subitem a {
+    color: black;
+}
+.subitem-active a {
+    background-color: purple;
+    border-radius: 3px;
+}
+
+/* .submenu-active, 
+.subitem-active, */
+.item-active,
+.active-highlight {
+    background-color: powderblue;
+    border-radius: 3px;
+}
+
+/* Desktop menu */
+@media all and (min-width: 440px) {
+    .toggle {
+      display: none;
+    }
+    .sm-icon-container {
+        text-align: right;
+    }
+}
+
+/* Mobile Menu */
+@media all and (max-width: 440px) {
     .container {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
@@ -230,27 +125,67 @@ main p {
         "nav"
         "social"
         "main";
-      margin: .25rem;
     }
-
     .mobile.fa.fa-bars, 
     .mobile.fa.fa-times {
         top: 0;
         right: 0;
         position: fixed;
     }
-
     .menu {
         display: none;
     }
-
     .menu.active {
         display: grid;
     }
-
     .sm-icon-container {
         text-align: center;
     }
+    main h2 {
+        text-align: center;
+        border-bottom: none;
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Main Content */
+main {
+    grid-area: main;
+    padding-left: 5px;
+    /* max-width: 1240px; */
+}
+main h2 {
+    text-shadow: 1px 1px orange;
+    font-size: 45px;
+    border-bottom: solid 4px orange;
+    margin-top: 0;
+    padding-top: 0;
+}
+main h3 {
+    font-size: x-large;
+    border-bottom: solid 2px orange;
+    padding-bottom: 1rem;
+}
+main h4 {
+    color: orange;
+}
+main p {
+    padding-top: 1rem;
+    padding-bottom: .75rem;
+}
+.main-content {
+    margin-bottom: 7rem;
+}
+.text-wrap-rt {
+    clear:left;
+    float: right;
+    margin: 1rem;
+}
+.text-wrap-lt {
+    clear: right;
+    float: left;
+    margin: 1rem;
 }
 
 
