@@ -11,7 +11,7 @@ _Duration: 5 Days_
 ## Functional requirements:
 - [X] Must be responsive and function on desktop, mobile, and any resolution in-between.
 - [X] The main page container must be centered 
-    - [ ] and not exceed a max-width of 1240px.
+    - [X] and not exceed a max-width of 1240px.
 - [X] The page must prominently feature a 
     - [X] logo at the top (can be text styled with CSS)
     - [X] sidebar navigation
@@ -45,6 +45,6 @@ If you have suggestions or issues, please email me at [shyla.earl@gmail.com]
 
 ## Screen Shots
 
-(https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Desktop.png)
-- (https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Mobile%201.png)
-(https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Mobile%202.png)
+![MJ Desktop](https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Desktop.png)
+![MJ Mobile1](https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Mobile%201.png)
+1[MJ Mobile2](https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Mobile%202.png)

@@ -33,10 +33,9 @@ function onReady(){
 
     /* Toggle submenus */
     function toggleSubmenu() {
-        console.log($(this).parent().parent().children(".submenu"));
         let subList = $(this).parent().parent().children(".submenu");
-        console.log(subList);
-        if(this.classList.contains("submenu-active")){
+
+        if(subList.hasClass("submenu-active")){
             subList.removeClass("submenu-active");
         } else {
             subList.addClass("submenu-active");
@@ -45,8 +44,6 @@ function onReady(){
 
     /* Toggle active Item */
     function toggleActive() {
-        console.log($(this));
-        console.log(items);
         if(this.classList.contains("highlight-active")){
             this.classList.remove("highlight-active");
         } else if (!this.classList.contains("highlight-active") && menu.querySelector(".highlight-active")) {
@@ -56,6 +53,16 @@ function onReady(){
             this.classList.add("highlight-active");
         } else {
             this.classList.add("highlight-active");
+        }
+
+        if(!this.classList.contains("has-submenu") && this.classList.contains("item")) {
+            for(submenu of submenus){
+                submenu.classList.remove("submenu-active");
+            }
+        } else if (this.classList.contains("item") && !$(this).children("submenu-active")) {
+            for(submenu of submenus){
+                submenu.classList.remove("submenu-active");
+            }
         }
     }
 

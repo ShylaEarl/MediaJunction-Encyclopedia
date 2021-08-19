@@ -94,11 +94,6 @@ a {
 .subitem a {
     color: black;
 }
-.subitem-active a {
-    background-color: purple;
-    border-radius: 3px;
-}
-
 .highlight-active {
     background-color: powderblue;
     border-radius: 3px;
@@ -152,7 +147,8 @@ a {
 main {
     grid-area: main;
     padding-left: 5px;
-    /* max-width: 1240px; */
+    max-width: 1240px;
+    margin: auto;
 }
 main h2 {
     text-shadow: 1px 1px orange;
