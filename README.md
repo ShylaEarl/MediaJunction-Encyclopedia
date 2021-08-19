@@ -43,8 +43,6 @@ _Duration: 5 Days_
 ## Support
 If you have suggestions or issues, please email me at [shyla.earl@gmail.com]
 
-## Screen Shots
+## Screen Shot
 
 ![MJ Desktop](https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Desktop.png)
-![MJ Mobile1](https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Mobile%201.png)
-1[MJ Mobile2](https://github.com/ShylaEarl/MediaJunction-Encyclopedia/blob/main/Media%20Junction%20Mobile%202.png)
